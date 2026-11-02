@@ -53,3 +53,14 @@
 - 「狀態」欄只寫實測過的結果，沒測過就寫未驗證。
 - Mac 與 Windows 兩欄都要填。
 - 不要在此放金鑰、帳密或個人檔案。
+
+## 七、Linux（雲端 Claude 沙盒）安裝參考（未實測）
+
+- Debian/Ubuntu：`sudo apt install ffmpeg blender nodejs npm`
+- Remotion 不需全域安裝，在專案內 `npm i remotion @remotion/cli react react-dom`，首次渲染會自動下載 Chromium。
+- 沒有 GPU 時，Blender 用 `-b` 背景模式與 Eevee/CPU 渲染，速度較慢。
+- 實際可用性取決於沙盒是否允許連網與 sudo。
+
+## 八、已驗證的範例
+
+good-morning-video：30 秒早安動畫用 Remotion（SVG 動畫）+ numpy 合成音樂 + 內建 FFmpeg 編碼，在 8GB Mac 上約 4 分鐘渲染完成。
