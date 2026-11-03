@@ -21,7 +21,7 @@ GitHub：https://github.com/andice0107/video-toolkit
 | 工具 | 用途 | Mac 安裝 | Windows 安裝 | Mac 狀態 | Windows 狀態 |
 |---|---|---|---|---|---|
 | ImageMagick | 縮放、裁切、合成、格式轉換 | `brew install imagemagick` | `winget install --id ImageMagick.ImageMagick -e` | 未裝 | 7.1.2-34 已裝 |
-| Pillow (Python) | 程式化畫圖、加文字、拼圖 | `pip3 install pillow` | `pip install pillow` | 未裝 | 12.3.0 已裝 |
+| Pillow (Python) | 程式化畫圖、加文字、拼圖 | `pip3 install pillow` | `pip install pillow` | 未裝 | 13.0.0 已裝（`%USERPROFILE%\image-toolkit\venv`；全域 12.3.0） |
 | sharp (Node) | 高速圖片處理 | `npm i sharp` | `npm i sharp` | 依專案 | 已裝（`%USERPROFILE%\image-toolkit`） |
 | Playwright | 把 HTML/CSS/SVG 排版截成 PNG | `npm i -D playwright && npx playwright install chromium` | 同左 | 未裝 | 已裝（chromium-1248） |
 | librsvg | SVG 轉 PNG | `brew install librsvg` | 改用 Inkscape 或 sharp | 未裝 | 未裝（改用 Inkscape／sharp） |
