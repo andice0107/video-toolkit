@@ -43,6 +43,12 @@ GitHub：https://github.com/andice0107/video-toolkit
 
 腳本只裝核心三件（Blender LTS、FFmpeg、Node.js），已存在就略過。
 
+Windows 腳本補充（2026-11-03 實測）：
+
+- 選用工具 gifsicle 與 SoX 由腳本一併安裝；gifsicle 在 winget 找不到時自動改用 scoop。
+- Blender 安裝後不會自動寫入 PATH，腳本會檢查後補進使用者 PATH；已存在就不重複寫入。
+- 結尾逐項驗證並印出結果；若顯示找不到指令，重開終端機後再跑一次。
+
 ## 五、典型流程
 
 1. Blender 背景渲染：`blender -b scene.blend -o //out/frame_#### -F PNG -a`
